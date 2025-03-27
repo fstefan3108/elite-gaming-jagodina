@@ -1,17 +1,41 @@
 {
   
   "name": "elite-gaming",
+  
   "version": "1.0.0",
+  
   "main": "index.js",
+  
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"vite build"
+  
+    
+  "test": "echo \"Error: no test specified\" && exit 1",
+  
+    
+  "build": "vite build"
+  
   },
+  
   "author": "",
+  
   "license": "ISC",
+  
   "description": "",
+  
   "dependencies": {
-    "@tailwindcss/cli": "^4.0.13",
-    "tailwindcss": "^4.0.13"
+  
+    
+  "@tailwindcss/cli": "^4.0.13",
+  
+    
+  "tailwindcss": "^4.0.13"
+  
+  },
+  
+  "devDependencies": {
+  
+    
+  "vite": "^6.2.3"
+  
   }
 }

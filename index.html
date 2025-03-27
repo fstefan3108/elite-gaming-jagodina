@@ -1,0 +1,585 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="flex flex-col items-center relative overflow-hidden md:min-h-[100vh] ">
+        <div class="cover-image absolute max-h-100 md:max-h-full">
+
+        </div>
+        <nav class="w-full pl-10 pr-10 flex justify-between items-center bg-[#1a191d] pt-2 fixed duration-300 z-1000 md:bg-transparent"
+            id="navMenu">
+            <div class="logo-container p-1 ml-5">
+                <svg width="50" height="60" viewBox="0 0 475 385" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    id="svgLogo">
+                    <path
+                        d="M233.981 4.29031L3.51852 382.415H165.37L193.519 337.728H93.2407L149.537 241.478L223.426 282.728L253.333 241.478L177.685 196.79L233.981 103.978L288.519 177.884L314.907 136.634L233.981 4.29031Z"
+                        fill="white" id="pathOne" class="" />
+                    <path
+                        d="M323.704 151.25L469.722 382.415H177.685L267.407 241.478L332.5 282.728L314.907 323.125L288.519 309.375L267.407 337.728H383.518L288.519 196.79L323.704 151.25Z"
+                        fill="white" id="pathTwo" class=" md:fill-white" />
+                </svg>
+            </div>
+            <ul class="navbar hidden space-x-5 uppercase text-white font-bold duration-300 md:flex" id="menuItems">
+                <li><a href="">Početna</a></li>
+                <li><a href="">Merch</a></li>
+                <li><a href="">Kontakt</a></li>
+                <li><a href="#games">Igrice</a></li>
+                <li><a href="#cene">Cene</a></li>
+                <li><a href="tel:+381601314993"
+                        class="button-circled px-5 p-3 rounded-full bg-[#ff0e1f] text-white overflow-hidden text-center duration-400">
+                        <i class="fa-solid fa-phone-volume pr-2"></i>REZERVIŠI </a>
+                </li>
+
+            </ul>
+
+            <button id="menu-button" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top bg-white"></span>
+                <span class="hamburger-mid bg-white"></span>
+                <span class="hamburger-bot bg-white"></span>
+            </button>
+
+        </nav>
+        <div class="md:hidden">
+            <ul id="menu" class="fixed text-white flex flex-col self-end z-900 uppercase
+            py-8 mt-16 space-y-6 pl-15 font-bold bg-[#1a191d] w-full
+            sm:self-center left-0 pr-10 drop-shadow-medium">
+                <li class="flex justify-between hover:text-[#ff0e1f] duration-300"><a href="">Početna</a><i
+                        class="fa-solid fa-house pr-2"></i></li>
+                <li class="flex justify-between hover:text-[#ff0e1f] duration-300"><a href="">Merch</a><i
+                        class="fa-solid fa-shirt pr-2"></i></li>
+                <li class="flex justify-between hover:text-[#ff0e1f] duration-300"><a href="">Kotankt</a><i
+                        class="fa-solid fa-gamepad  pr-2"></i></li>
+                <li class="flex justify-between hover:text-[#ff0e1f] duration-300"><a href="#games">Igrice</a><i
+                        class="fa-solid fa-phone-volume pr-2"></i></li>
+                <li class="flex justify-between hover:text-[#ff0e1f] duration-300"><a href="#cene">Cene</a><i
+                        class="fa-solid fa-circle-info pr-2"></i></li>
+                <li class="flex justify-between items-center w-1/2 p-2 pl-4 rounded-2xl text-[#ff0e1f] duration-300"><a
+                        href="tel:+381656005900">Rezerviši</a><i class="fa-solid fa-face-smile-wink pr-2"></i></li>
+
+
+            </ul>
+        </div>
+
+
+
+
+        <div class="elite-heading container p-5 mt-25 m-auto z-1 flex flex-col items-center justify-center md:mt-30">
+            <img src="/img/eliteLogoColored.png" alt="" id="logoImage" class="max-w-[180px] md:max-w-xs">
+            <h1
+                class="font-extrabold text-5xl tracking-[0.8rem] text-center text-[#ff0e1f] md:text-7xl md:tracking-[1.7rem]">
+                ELITE</h1>
+            <div class="line max-w-[200px] mr-2 mt-3 h-2 bg-white"></div>
+            <h1 class="font-extrabold text-4xl tracking-[0.5rem] text-center  text-white">gaming</h1>
+
+        </div>
+
+    </header>
+
+    <main class=" m-auto text-center p-6 mt-10">
+        <h1 class="font-bold text-white text-3xl md:text-5xl">IGRAJ NA <span class="text-[#ff0e1f]">VRHUNSKOJ</span>
+            OPREMI</h1>
+        <p class="mt-10 text-center text-[#a6a98c] max-w-xl m-auto">Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Quas
+            architecto officiis sint delectus, cum obcaecati eos ipsam dolore cumque aliquid repellat assumenda
+            quibusdam.</p>
+    </main>
+
+    <div class=" grid m-auto gap-y-15 md:grid-cols-3 mt-10">
+        <div
+            class="grid-item min-h-70 flex items-end bg-[url(/img/imgMonitor.jpg)] bg-cover bg-center overflow-hidden relative">
+            <div class="text-wrap pt-2 flex duration-300 absolute">
+                <div class="text-container m-auto w-full p-5 pl-10">
+                    <span class="p-1 px-5 text-white bg-[#ff0e1f]">high-res</span>
+                    <h2 class="font-bold uppercase text-white text-2xl mt-3">240HZ Monitori</h2>
+                    <div class="p-wrap mt-5">
+                        <p class="text-white ">Uživajte u visokoj rezoluciji i velikom broju hz-a i fps-a</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div
+            class="grid-item min-h-70 flex items-end bg-[url(/img/imgKomp.jpg)] bg-cover bg-center overflow-hidden relative">
+            <div class="text-wrap pt-2 flex duration-300 absolute">
+                <div class="text-container m-auto w-full p-5 pl-10">
+                    <span class="p-1 px-5 text-white bg-[#ff0e1f]">performance</span>
+                    <h2 class="font-bold uppercase text-white text-2xl mt-3">Ryzen 9</h2>
+                    <div class="p-wrap mt-5">
+                        <p class="text-white ">Kompjuteri sa snažnim i oslonjivim procesorima visokog kapaciteta</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div
+            class="grid-item min-h-70 flex items-end bg-[url(/img/imgPS.jpg)] bg-cover bg-center overflow-hidden relative">
+            <div class="text-wrap pt-2 flex duration-300 absolute">
+                <div class="text-container m-auto w-full p-5 pl-10">
+                    <span class="p-1 px-5 text-white bg-[#ff0e1f]">console</span>
+                    <h2 class="font-bold uppercase text-white text-2xl mt-3">Playstation 5</h2>
+                    <div class="p-wrap mt-5">
+                        <p class="text-white ">Igrajte najnovije igrice na playstation slim-u u VIP sobi</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div
+            class="grid-item min-h-70 flex items-end bg-[url(/img/imgTastatura.jpg)] bg-cover bg-center overflow-hidden relative">
+            <div class="text-wrap pt-2 flex duration-300 absolute">
+                <div class="text-container m-auto w-full p-5 pl-10">
+                    <span class="p-1 px-5 text-white bg-[#ff0e1f]">mechanical</span>
+                    <h2 class="font-bold uppercase text-white text-2xl mt-3">Tastature</h2>
+                    <div class="p-wrap mt-5">
+                        <p class="text-white ">RGB Tastature sa više vrsta kombinacija boja i svetala</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div
+            class="grid-item min-h-70 flex items-end bg-[url(/img/imgMis.jpg)] bg-cover bg-center overflow-hidden relative">
+            <div class="text-wrap pt-2 flex duration-300 absolute">
+                <div class="text-container m-auto w-full p-5 pl-10">
+                    <span class="p-1 px-5 text-white bg-[#ff0e1f]">fast</span>
+                    <h2 class="font-bold uppercase text-white text-2xl mt-3">Miševi</h2>
+                    <div class="p-wrap mt-5">
+                        <p class="text-white ">Gaming miševi koji obećavaju brzinu i udobnost prilikom igranja, savršeni
+                            za pucačine</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div
+            class="grid-item min-h-70 flex items-end bg-[url(/img/imgSluske.jpg)] bg-cover bg-center overflow-hidden relative">
+            <div class="text-wrap pt-2 flex duration-300 absolute">
+                <div class="text-container m-auto w-full p-5 pl-10">
+                    <span class="p-1 px-5 text-white bg-[#ff0e1f]">hi-fi</span>
+                    <h2 class="font-bold uppercase text-white text-2xl mt-3">HyperX Slušalice</h2>
+                    <div class="p-wrap mt-5">
+                        <p class="text-white ">Slušalice koje pružaju kvalitetan i čist zvuk prilikom korišćenja</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section id="internet">
+        <div class="container m-auto flex flex-col text-center gap-15 p-5 pb-10 mt-15 md:flex-row md:text-left">
+            <div class="flex-1 flex flex-col items-center p-5 md:p-10 md:items-start">
+                <div class="heading flex items-center md:gap-5">
+                    <span class="bg-[#ff0e1f] w-[35px] h-[8px] hidden md:block"></span>
+                    <h2 class="font-bold text-5xl text-white"><span class="text-[#ff0e1f] md:text-white">BRZ</span>
+                        INTERNET</h2>
+                </div>
+                <p class="text-white mt-15 max-w-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laborum
+                    blanditiis cum voluptatum soluta eligendi ullam cupiditate maxime et voluptatem?</p>
+                <p class="text-white mt-5 max-w-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe,
+                    officiis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae cum doloribus
+                    voluptas, ullam nobis quidem.</p>
+
+            </div>
+            <div
+                class="flex-1 flex flex-col rounded-xl justify-center items-center max-h-100 overflow-hidden">
+
+                <img src="/img/imgNetBG.jpg" alt="" class="rounded-xl">
+
+            </div>
+        </div>
+
+
+
+    </section>
+    <section id="VIP" class="mt-12">
+        <div
+            class="vip-wrap relative w-full p-20 flex flex-col justify-center items-center text-center bg-[url(/img/imgGamesBG.jpg)] bg-center bg-cover bg-no-repeat">
+            <h2 class="font-bold text-white text-5xl z-3"><span class="text-[#ff0e1f]">VIP</span> SOBA</h2>
+            <p class="text-white mt-5 z-3 max-w-sm">Igraj igrice u VIP sobi sa najboljom opremom i bez ometanja</p>
+            <a class="px-8 p-4 z-3 mt-10 bg-[#ff0e1f] text-white overflow-hidden duration-400">REZERVIŠI</a>
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+    <section id="cene">
+        <h1 class="font-bold text-white text-3xl md:text-5xl text-center mt-20">CENOVNIK</h1>
+        <div
+            class="cene-container flex flex-col max-w-5xl m-auto justify-center items-center flex-wrap gap-10 p-10 mt-3 md:flex-row">
+            <div
+                class="cene-card flex-1 p-2 pt-8 pb-12  bg-white rounded-xl drop-shadow-2xl flex flex-col text-center items-center w-full">
+                <h3 class="font-bold text-3xl uppercase text-[#ff0e1f] mt-10">OTVORENO</h3>
+                <p class="text-6xl mt-15"><sup>/sat</sup>200<sub>din</sub></p>
+                <ul class="mt-15">
+                    <li class="flex mt-2 items-center gap-2 "><span
+                            class="bg-[#ff0e1f] w-[10px] h-[3px]"></span>Neograničen
+                        gejming 24/7</li>
+                    <li class="flex mt-2 items-center gap-2 "><span class="bg-[#ff0e1f] w-[10px] h-[3px]"></span>Cena:
+                        200din po satu</li>
+                    <li class="flex mt-2 items-center gap-2 "><span
+                            class="bg-[#ff0e1f] w-[10px] h-[3px]"></span>Dostupne
+                        rezervacije</li>
+
+                </ul>
+            </div>
+            <div
+                class="cene-card flex-1 p-2 pt-8 pb-12 bg-[#121212] rounded-xl drop-shadow-2xl flex flex-col text-center items-center w-full">
+                <h3 class="font-bold text-3xl uppercase text-[#ff0e1f] mt-10">PS5</h3>
+                <p class="text-6xl mt-15 text-white"><sup>/sat</sup>500<sub>din</sub></p>
+                <ul class="mt-15 text-white">
+                    <li class="flex mt-2 items-center gap-2 "><span
+                            class="bg-[#ff0e1f] w-[10px] h-[3px]"></span>Neograničen
+                        gejming 24/7</li>
+                    <li class="flex mt-2 items-center gap-2 "><span class="bg-[#ff0e1f] w-[10px] h-[3px]"></span>Cena:
+                        200din po satu</li>
+                    <li class="flex mt-2 items-center gap-2 "><span
+                            class="bg-[#ff0e1f] w-[10px] h-[3px]"></span>Dostupne
+                        rezervacije</li>
+
+                </ul>
+            </div>
+            <div
+                class="cene-card flex-1 p-2 pt-8 pb-12 bg-[#ff0e1f] text-white rounded-xl drop-shadow-2xl flex flex-col items-center w-full">
+                <h3 class="font-bold text-3xl uppercase mt-10">VIP</h3>
+                <p class="text-6xl mt-15"><sup>/sat</sup>400<sub>din</sub></p>
+                <ul class="mt-15">
+                    <li class="flex mt-2 items-center gap-2 "><span class="bg-white w-[10px] h-[3px]"></span>Neograničen
+                        gejming 24/7</li>
+                    <li class="flex mt-2 items-center gap-2 "><span class="bg-white w-[10px] h-[3px]"></span>Cena:
+                        200din po satu</li>
+                    <li class="flex mt-2 items-center gap-2 "><span class="bg-white w-[10px] h-[3px]"></span>Dostupne
+                        rezervacije</li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="cene-pica" class="p-9 -mt-8">
+        <div
+            class="max-w-[950px] grid gap-5 p-5 sm:p-10 pb-15 grid-cols-1 rounded-xl bg-[#ff0e1f] m-auto md:grid-cols-2">
+            <h1 class="font-bold text-white text-center text-4xl pt-3 md:mb-4 md:text-left">CENE PICA:</h1>
+            <br>
+            <div class="cene-grid-item bg-white rounded-4xl p-3 pl-6 pr-6 flex justify-between items-center">
+                <p class="text-black text-md uppercase font-bold">Cedevita</p>
+                <p class="text-black text-md uppercase fond-bold">150<sub class="font-bold">din</sub></p>
+            </div>
+            <div class="cene-grid-item bg-white rounded-4xl p-3 pl-6 pr-6 flex justify-between items-center">
+                <p class="text-black text-md uppercase font-bold">Voda 1L</p>
+                <p class="text-black text-md uppercase fond-bold">150<sub class="font-bold">din</sub></p>
+            </div>
+            <div class="cene-grid-item bg-white rounded-4xl p-3 pl-6 pr-6 flex justify-between items-center">
+                <p class="text-black text-md uppercase font-bold">Red Bull</p>
+                <p class="text-black text-md uppercase fond-bold">250<sub class="font-bold">din</sub></p>
+            </div>
+            <div class="cene-grid-item bg-white rounded-4xl p-3 pl-6 pr-6 flex justify-between items-center">
+                <p class="text-black text-md uppercase font-bold">Shot</p>
+                <p class="text-black text-md uppercase fond-bold">200<sub class="font-bold">din</sub></p>
+            </div>
+            <div class="cene-grid-item bg-white rounded-4xl p-3 pl-6 pr-6 flex justify-between items-center">
+                <p class="text-black text-md uppercase font-bold">Guarana</p>
+                <p class="text-black text-md uppercase fond-bold">200<sub class="font-bold">din</sub></p>
+            </div>
+            <div class="cene-grid-item bg-white rounded-4xl p-3 pl-6 pr-6 flex justify-between items-center">
+                <p class="text-black text-md uppercase font-bold">Protein Cokoladica</p>
+                <p class="text-black text-md uppercase fond-bold">200<sub class="font-bold">din</sub></p>
+            </div>
+            <div class="cene-grid-item bg-white rounded-4xl p-3 pl-6 pr-6 flex justify-between items-center">
+                <p class="text-black text-md uppercase font-bold">Kafa</p>
+                <p class="text-black text-md uppercase fond-bold">150<sub class="font-bold">din</sub></p>
+            </div>
+            <div class="cene-grid-item bg-white rounded-4xl p-3 pl-6 pr-6 flex justify-between items-center">
+                <p class="text-black text-md uppercase font-bold">Protein Kutija</p>
+                <p class="text-black text-md uppercase fond-bold">6500<sub class="font-bold">din</sub></p>
+            </div>
+            <div class="cene-grid-item bg-white rounded-4xl p-3 pl-6 pr-6 flex justify-between items-center">
+                <p class="text-black text-md uppercase font-bold">Voda 0.5L</p>
+                <p class="text-black text-md uppercase fond-bold">200<sub class="font-bold">din</sub></p>
+            </div>
+            <div class="cene-grid-item bg-white rounded-4xl p-3 pl-6 pr-6 flex justify-between items-center">
+                <p class="text-black text-md uppercase font-bold">Protein kesica</p>
+                <p class="text-black text-md uppercase fond-bold">200<sub class="font-bold">din</sub></p>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+    <section id="games">
+        <h1 class="font-bold text-[#ff0e1f] text-3xl md:text-5xl text-center mt-20">IGRICE</h1>
+        <p class="text-center m-auto text-white mt-5 p-3 max-w-lg">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Quo quos perspiciatis sed totam repellendus a?</p>
+        <div
+            class="grid-container-games grid-cols-1 mt-5 gap-8 p-5 m-auto grid max-w-6xl md:grid-cols-2 lg:grid-cols-3">
+            <div class="grid-item flex flex-col min-h-140">
+                <div class="grid-item-img bg-[url(/img/bgLoL.jpg)] p-5 bg-cover bg-center bg-no-repeat flex-2">
+                    <img src="/img/imgLolIcon.png" alt="" width="45px">
+                </div>
+                <div class="grid-item-text bg-[#121212] flex-1 p-5 text-center pb-7">
+                    <h3 class="font-bold text-2xl uppercase text-white mt-3">League of Legends</h3>
+                    <p class="text-white mt-5 font-light text-sm mb-7">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure, nesciunt.</p>
+                    <a class="btn-item px-7 p-2 bg-[#ff0e1f] text-white text-sm">Igraj</a>
+                </div>
+            </div>
+            <div class="grid-item flex flex-col min-h-130">
+                <div class="grid-item-img bg-[url(/img/bgValorant.jpg)] p-5 bg-cover bg-center bg-no-repeat flex-2">
+                    <img src="/img/imgValorantIcon.png" alt="" width="60px">
+                </div>
+                <div class="grid-item-text bg-[#121212] flex-1 p-5 text-center pb-7">
+                    <h3 class="font-bold text-2xl uppercase text-white mt-3">Valorant</h3>
+                    <p class="text-white mt-5 font-light text-sm mb-7">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure, nesciunt.</p>
+                    <a class="btn-item px-7 p-2 bg-[#ff0e1f] text-white text-sm">Igraj</a>
+                </div>
+            </div>
+            <div class="grid-item flex flex-col min-h-130">
+                <div class="grid-item-img bg-[url(/img/bgCS.jpg)] p-3 bg-cover bg-center bg-no-repeat flex-2">
+                    <img src="/img/imgCS.png" alt="" width="80px">
+                </div>
+                <div class="grid-item-text bg-[#121212] flex-1 p-5 text-center pb-7">
+                    <h3 class="font-bold text-2xl uppercase text-white mt-3">Counter-Strike</h3>
+                    <p class="text-white mt-5 font-light text-sm mb-7">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure, nesciunt.</p>
+                    <a class="btn-item px-7 p-2 bg-[#ff0e1f] text-white text-sm">Igraj</a>
+                </div>
+            </div>
+            <div class="grid-item flex flex-col min-h-130">
+                <div class="grid-item-img bg-[url(/img/bgFort.jpg)] p-5 bg-cover bg-center bg-no-repeat flex-2">
+                    <img src="/img/imgFortIcon.png" alt="" width="50px">
+                </div>
+                <div class="grid-item-text bg-[#121212] flex-1 p-5 text-center pb-7">
+                    <h3 class="font-bold text-2xl uppercase text-white mt-3">Fortnite</h3>
+                    <p class="text-white mt-5 font-light text-sm mb-7">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure, nesciunt.</p>
+                    <a class="btn-item px-7 p-2 bg-[#ff0e1f] text-white text-sm">Igraj</a>
+                </div>
+            </div>
+            <div class="grid-item flex flex-col min-h-130">
+                <div class="grid-item-img bg-[url(/img/bgMarvel.jpg)] pl-5 bg-cover bg-center bg-no-repeat flex-2">
+                    <img src="/img/imgMarvelIcon.png" alt="" width="80px">
+                </div>
+                <div class="grid-item-text bg-[#121212] flex-1 p-5 text-center pb-7">
+                    <h3 class="font-bold text-2xl uppercase text-white mt-3">Marvel Rivals</h3>
+                    <p class="text-white mt-5 font-light text-sm mb-7">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure, nesciunt.</p>
+                    <a class="btn-item px-7 p-2 bg-[#ff0e1f] text-white text-sm">Igraj</a>
+                </div>
+            </div>
+            <div class="grid-item flex flex-col min-h-130">
+                <div class="grid-item-img bg-[url(/img/bgDota.jpg)] p-5 bg-cover bg-center bg-no-repeat flex-2">
+                    <img src="/img/imgDotaIcon.png" alt="" width="50px">
+                </div>
+                <div class="grid-item-text bg-[#121212] flex-1 p-5 text-center pb-7">
+                    <h3 class="font-bold text-2xl uppercase text-white mt-3">Dota 2</h3>
+                    <p class="text-white mt-5 font-light text-sm mb-7">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure, nesciunt.</p>
+                    <a class="btn-item px-7 p-2 bg-[#ff0e1f] text-white text-sm">Igraj</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tournament" class="p-5">
+        <div
+            class="min-h-120 flex gap-10 mt-5 p-8 sm:p-15 flex-col max-w-[1115px] m-auto rounded-4xl justify-center items-center bg-[url(/img/bgTurnir.jpg)] bg-center bg-cover bg-no-repeat">
+            <h1 class="font-bold text-white text-3xl text-center p-0 md:p-3 md:text-4xl sm:text-left"><span
+                    class="bg-[#ff0e1f] px-2">DOMINIRAJ</span> TURNIRE</h1>
+            <div
+                class="tournament-text flex flex-col gap-7 flex-2 rounded-4xl bg-[rgba(0,0,0,0.9)] max-w-5xl text-center p-5 mt-4 md:flex-row md:gap-0 md:p-15">
+                <div class="text-subtext flex-col p-2 flex flex-1 items-center">
+                    <div class="svg-wrap flex-1 flex justify-center items-center ">
+                        <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="80px"
+                            height="80px">
+                            <defs>
+                                <image width="190" height="172" id="img1"
+                                    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL4AAACsCAMAAADytOY/AAAAAXNSR0IB2cksfwAAAu5QTFRFAAAA/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/57flAAAAPp0Uk5TABREapG40d7r9/zx5dnCn3tWIgxOkNL+/6hoGANGpPX9vxAOePSUJBOD76wlbPD6kjfO7VmqGsHmODzq+F5N9rqTUkU0QEzVhmHAcS8BFVSa7o9g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" />
+                            </defs>
+                            <use id="Background" href="#img1" x="5" y="14" />
+                        </svg>
+                    </div>
+                    <div class="p-wrap flex-1 flex items-center justify-center mt-5">
+                        <p class="text-white pl-3 text-xl">Prijavi se za turnir sa svojom ekipom</p>
+                    </div>
+                </div>
+                <div class="text-subtext flex-col p-2 mt-3 flex flex-1 items-center">
+                    <div class="svg-wrap flex-1 flex justify-center items-center">
+                        <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 301" width="70px"
+                            height="70px">
+                            <defs>
+                                <image width="312" height="301" id="img2"
+                                    href="data:image/png;base64,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" />
+                            </defs>
+                            <use id="Background" href="#img2" x="0" y="0" />
+                        </svg>
+                    </div>
+                    <div class="p-wrap flex-1 flex items-center justify-center mt-5">
+                        <p class="text-white pl-3 text-xl">Pokaži taktiku, veštine i timsku igru</p>
+                    </div>
+                </div>
+                <div class="text-subtext flex-col p-2 mt-3 flex flex-1 items-center">
+                    <div class="svg-wrap flex-1 flex justify-center items-center">
+                        <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="70px"
+                            height="70px">
+                            <defs>
+                                <image width="356" height="474" id="img3"
+                                    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWQAAAHaCAMAAAAABcMXAAAAAXNSR0IB2cksfwAAAvdQTFRFAAAA/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4f/w4fxrBxLQAAAP10Uk5TAAECAwQHBtD/MMAQsAVQcCBAoGDgkPCACAkMDREWDwtCjL7h6Ort4+786+fUpWsbVNL0lRqu/vv9ThnRbg7MXJspRKu1MyX2j8qS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" />
+                            </defs>
+                            <use id="Background" href="#img3" x="78" y="12" />
+                        </svg>
+                    </div>
+                    <div class="p-wrap flex-1 flex items-center justify-center mt-5">
+                        <p class="text-white pl-3 text-xl">Pokaži taktiku, veštine i timsku igru</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tournament-button flex-1">
+                <a class="btn-item px-12 p-4 bg-[#ff0e1f] text-white text-lg">Prijava</a>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section id="ps5">
+        <div
+            class="ps5-wrap relative w-full gap-20 p-15 flex justify-center items-center mt-10 bg-[url(/img/psBG.jpg)] bg-bottom bg-cover bg-no-repeat flex-col-reverse md:flex-row">
+            <div class="ps5-img-wrap z-3 ">
+                <img src="/img/ps5.png" alt="" class="drop-shadow-2xl w-xs hidden md:block">
+            </div>
+            <div class="ps5-text-wrap flex flex-col text-center md:text-left">
+                <h2 class="font-bold text-white text-4xl/12 z-3 max-w-lg"><span class="bg-[#ff0e1f] px-2">PS5</span>
+                    SOBA: IGRAJ NAJNOVIJE I NAJPOPULARNIJE IGRICE SA DO 4 DRUGARA</h2>
+                <div class="button-wrap mt-15 z-3">
+                    <a class="px-14 p-6 z-3 mt-10 bg-[#ff0e1f] text-white overflow-hidden duration-400 font-bold"><i
+                            class="fa-solid fa-gamepad pr-2"></i>REZERVIŠI</a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+    <section id="review-section">
+        <h1 class="font-bold text-white text-3xl md:text-5xl text-center mt-20 md:mb-15"><i class="text-[#ff0e1f] pr-4 fa-solid fa-star"></i>RECENZIJE<i class="text-[#ff0e1f] pl-4 fa-solid fa-star"></i></h1>
+        <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-bde051f3-f9c4-43da-a6f5-9af9426e9326" data-elfsight-app-lazy></div>
+    </section>
+
+
+    <section id="location" class="mt-20">
+        <div class="location-wrap min-h-100 w-full bg-white m-auto pb-20">
+            <h1 class="text-black text-center text-3xl md:text-5xl font-bold pt-10"><i
+                    class="fa-solid text-[#ff0e1f] fa-rocket pr-4"></i>KAKO DO NAS?</h1>
+            <div class="iframe-wrap m-auto max-w-4xl mt-10 bg-blue-500">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2871.2133608980444!2d21.26101817530885!3d43.975637031518346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4756c5dfe8c1da01%3A0xa2c063d5f7adf525!2sElite%20Gaming%20Igraonica!5e0!3m2!1sen!2srs!4v1742474902620!5m2!1sen!2srs"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="m-auto w-full"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container m-auto flex flex-col text-center gap-15 p-5 pb-20 mt-15 md:flex-row-reverse md:text-left">
+            <div class="flex-1 flex flex-col items-center p-5 md:p-10 md:items-start">
+                <div class="heading flex items-center md:gap-5">
+                    <span class="bg-[#ff0e1f] w-[35px] h-[8px] hidden md:block"></span>
+                    <h2 class="font-bold text-5xl text-white"><span class="text-[#ff0e1f] md:text-white">BRZ</span>
+                        INTERNET</h2>
+                </div>
+                <p class="text-white mt-15 max-w-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laborum
+                    blanditiis cum voluptatum soluta eligendi ullam cupiditate maxime et voluptatem?</p>
+                <p class="text-white mt-5 max-w-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe,
+                    officiis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae cum doloribus
+                    voluptas, ullam nobis quidem.</p>
+
+            </div>
+            <div
+                class="flex-1 flex flex-col rounded-xl justify-center items-center max-h-120 overflow-hidden">
+
+                <img src="/img/bgAbout.jpg" alt="">
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <footer class="p-10 pb-18 bg-[#ff0e1f] flex flex-col justify-center text-center items-center">
+        <img src="/img/eliteLogoFooter.svg" alt="" width="300px" class="p-5">
+        <h1 class="font-bold text-3xl text-black mt-2">KONTAKTIRAJTE NAS</h1>
+        <p class="text-black text-2xl font-bold mt-15"> <i class="fa-solid fa-phone-volume pr-2"></i>+381 60 1314993</p>
+        <p class="text-black text-2xl font-bold mt-3"> <i class="fa-solid fa-envelope pr-2"></i>elitegaming@gmail.com
+        </p>
+        <p class="text-black text-2xl font-bold mt-3"> <i class="fa-solid fa-location-dot pr-2"></i>Knjeginje Milice 87,
+            Jagodina 35000</p>
+        <div class="icon-wrap flex mt-10 gap-5">
+            <?xml version="1.0" standalone="no"?>
+            <!DOCTYPE svg
+                PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+            <a href="https://facebook.com/stefan.filipovic.7503"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                    width="45px" height="45px" viewBox="0 0 300.000000 300.000000" preserveAspectRatio="xMidYMid meet">
+
+                    <g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)" fill="black" stroke="none">
+                        <path d="M1350 2989 c-315 -51 -478 -110 -700 -257 -114 -75 -319 -280 -393
+-392 -163 -250 -244 -496 -254 -774 -12 -338 72 -637 258 -917 79 -117 273
+-314 384 -388 148 -99 463 -237 487 -213 4 4 7 228 6 498 l-3 489 -153 3 -152
+3 2 227 3 227 151 3 151 3 6 202 c6 228 20 299 83 425 68 138 180 224 359 277
+80 24 108 27 255 28 173 2 331 -15 350 -38 7 -8 9 -80 8 -206 l-3 -194 -150
+-6 c-155 -6 -207 -18 -266 -59 -70 -50 -102 -161 -97 -333 l3 -98 237 1 c130
+0 239 -3 242 -8 3 -5 -6 -69 -20 -143 -33 -180 -54 -292 -54 -301 0 -4 -91 -9
+-202 -10 l-203 -3 0 -510 0 -510 55 3 c109 6 308 73 460 154 433 231 723 650
+788 1139 16 113 15 199 -3 344 -19 156 -35 229 -78 345 -160 441 -492 769
+-927 915 -208 70 -465 100 -630 74z" />
+                    </g>
+                </svg>
+            </a>
+            <?xml version="1.0" encoding="utf-8"?>
+            <a href="https://www.instagram.com/accounts/login/?next=%2Fdj.tweety%2F&source=omni_redirect"><svg
+                    fill="black" width="45px" height="45px" viewBox="0 0 19.2 19.2" data-name="Instagram w/circle"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.498 6.651a1.656 1.656 0 0 0-.95-.949 2.766 2.766 0 0 0-.928-.172c-.527-.024-.685-.03-2.02-.03s-1.493.006-2.02.03a2.766 2.766 0 0 0-.929.172 1.656 1.656 0 0 0-.949.95 2.766 2.766 0 0 0-.172.928c-.024.527-.03.685-.03 2.02s.006 1.493.03 2.02a2.766 2.766 0 0 0 .172.929 1.656 1.656 0 0 0 .95.949 2.766 2.766 0 0 0 .928.172c.527.024.685.029 2.02.029s1.493-.005 2.02-.03a2.766 2.766 0 0 0 .929-.171 1.656 1.656 0 0 0 .949-.95 2.766 2.766 0 0 0 .172-.928c.024-.527.029-.685.029-2.02s-.005-1.493-.03-2.02a2.766 2.766 0 0 0-.171-.929zM9.6 12.168A2.568 2.568 0 1 1 12.168 9.6 2.568 2.568 0 0 1 9.6 12.168zm2.669-4.637a.6.6 0 1 1 .6-.6.6.6 0 0 1-.6.6zM11.267 9.6A1.667 1.667 0 1 1 9.6 7.933 1.667 1.667 0 0 1 11.267 9.6zM9.6 0a9.6 9.6 0 1 0 9.6 9.6A9.6 9.6 0 0 0 9.6 0zm4.97 11.661a3.67 3.67 0 0 1-.233 1.214 2.556 2.556 0 0 1-1.462 1.462 3.67 3.67 0 0 1-1.213.233c-.534.024-.704.03-2.062.03s-1.528-.006-2.062-.03a3.67 3.67 0 0 1-1.213-.233 2.556 2.556 0 0 1-1.462-1.462 3.67 3.67 0 0 1-.233-1.213c-.024-.534-.03-.704-.03-2.062s.006-1.528.03-2.062a3.67 3.67 0 0 1 .232-1.213 2.556 2.556 0 0 1 1.463-1.463 3.67 3.67 0 0 1 1.213-.232c.534-.024.704-.03 2.062-.03s1.528.006 2.062.03a3.67 3.67 0 0 1 1.213.232 2.556 2.556 0 0 1 1.462 1.463 3.67 3.67 0 0 1 .233 1.213c.024.534.03.704.03 2.062s-.006 1.528-.03 2.062z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
